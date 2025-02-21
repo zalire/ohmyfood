@@ -1,0 +1,20 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "OhMyFood\r Ce projet vise à créer un site web permettant aux utilisateurs de composer leurs menus dans des restaurants gastronomiques.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zalire/ohmyfood.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zalire/ohmyfood/issues"
+  },
+  "homepage": "https://github.com/zalire/ohmyfood#readme"
+}
