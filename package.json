@@ -1,0 +1,21 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch sass/styles.scss styles.css" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zalire/ohmyfood.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zalire/ohmyfood/issues"
+  },
+  "homepage": "https://github.com/zalire/ohmyfood#readme",
+  "description": ""
+}
