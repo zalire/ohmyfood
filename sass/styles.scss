@@ -16,14 +16,14 @@ body {
   justify-content: center;
   
   &__logo {
-    padding-top: 40px;
+    padding-top: 20px;
   }
 }
 
 
 .intro {
   text-align: center;
-  padding: 30px;
+  padding: 18px;
   
   &__location {
     display: flex;
@@ -34,8 +34,8 @@ body {
   }
   
   &__location-icon {
-    margin-right: 30px;
-    font-size: 35px;
+    margin-right: 20px;
+    font-size: 25px;
     color: #3b3a39;
   }
   
@@ -191,7 +191,7 @@ body {
   padding: 30px 20px;
 
   &__logo {
-    font-family: "Shrikhand", cursive;
+    font-family: "Shrikhand";
     font-size: 18px;
     margin-bottom: 20px;
   }
