@@ -16,14 +16,14 @@ body {
   justify-content: center;
   
   &__logo {
-    padding-top: 20px;
+    padding-top: 15px;
   }
 }
 
 
 .intro {
   text-align: center;
-  padding: 18px;
+  padding: 15px;
   
   &__location {
     display: flex;
@@ -40,7 +40,7 @@ body {
   }
   
   &__location-text {
-    font-size: 40px;
+    font-size: 20px;
     color: #3b3a39;
     font-weight: bolder;
   }
@@ -51,23 +51,23 @@ body {
   }
   
   &__title {
-    font-size: 57px;
-    margin-bottom: 25px;
+    font-size: 28px;
+    margin-bottom: 10px;
   }
   
   &__description {
-    font-size: 30px;
+    font-size: 18px;
     margin-bottom: 30px;
   }
   
   &__button {
     background: linear-gradient($main-color, $second-color);
-    border-radius: 50px;
-    padding: 28px 38px;
-    font-size: 38px;
+    border-radius: 25px;
+    padding: 15px 25px;
+    font-size: 18px;
     color: #fff;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     cursor: pointer;
     font-family: "roboto";
   }
@@ -76,7 +76,7 @@ body {
 
 
 .fonctionnement {
-  padding: 40px 20px;
+  padding: 20px 10px;
   background-color: #f2f2f2;
 
   &__title {
@@ -133,7 +133,7 @@ body {
 
 
 .restaurants {
-  padding: 50px 10px;
+  padding: 20px 10px;
   background-color: white;
 
   &__title {
@@ -163,7 +163,10 @@ body {
     }
 
     &__info {
-      align-items: center; 
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
     }
 
     &__name {
@@ -171,19 +174,23 @@ body {
       font-weight: bold;
     }
 
+    &__bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
     &__location {
       font-size: 16px;
     }
 
     &__heart {
-      font-size: 24px;
+      font-size: 20px;
       cursor: pointer;
-      display: flex;
-      justify-content: space-between;
     }
-
   }
 }
+
 
 .footer {
   background: rgba(53, 53, 53, 1);
