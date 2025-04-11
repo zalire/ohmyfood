@@ -50,7 +50,7 @@ body {
 .intro__description {
   font-size: 18px;
   margin-bottom: 30px;
-  font-weight: 200;
+  font-weight: 300;
 }
 .intro__button {
   background: linear-gradient(#9356DC, #FF79DA);
@@ -64,6 +64,13 @@ body {
   font-family: "roboto";
   border: 0;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.intro .intro__button {
+  transition: filter 0.3s ease, box-shadow 0.3s ease;
+}
+.intro .intro__button:hover {
+  filter: brightness(1.1);
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.2);
 }
 
 .fonctionnement {
@@ -187,6 +194,33 @@ body {
 .restaurants .restaurant__heart i {
   font-weight: 400;
 }
+.restaurants .restaurant__heart {
+  position: relative;
+}
+.restaurants .restaurant__heart::after {
+  content: "\f004";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  color: #9356DC;
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  transform: scale(0.1);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.restaurants .restaurant__heart .fa-regular {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.restaurants .restaurant__heart:hover::after {
+  opacity: 1;
+  transform: scale(1);
+}
+.restaurants .restaurant__heart:hover .fa-regular {
+  opacity: 0;
+  transform: scale(0.1);
+}
 
 .footer {
   background: rgb(53, 53, 53);
@@ -217,14 +251,66 @@ body {
     max-width: 1440px;
     margin: 0 auto;
   }
+  .intro__content {
+    padding: 50px 100px;
+  }
+  .intro__title {
+    font-size: 36px;
+  }
+  .fonctionnement {
+    max-width: 1100px;
+  }
+  .fonctionnement__title {
+    padding-left: 0;
+  }
   .fonctionnement__steps {
     flex-direction: row;
-    justify-content: space-between;
-    gap: 30px;
+    justify-content: center;
+    gap: 35px;
+    max-width: 1100px;
+    margin: 0 auto;
   }
   .step {
     flex: 1;
+    max-width: 330px;
   }
+  .step__number {
+    left: 0;
+  }
+  .restaurants__cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px 100px;
+  }
+  .restaurant {
+    width: calc(50% - 50px);
+  }
+}
+.footer {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 40px;
+  padding: 15px 20px 10px 20px;
+}
+.footer__logo {
+  margin-bottom: 0;
+  font-size: 16px;
+  padding-left: 40px;
+}
+.footer__menu {
+  display: flex;
+  flex-direction: row;
+}
+.footer__menu p:nth-child(1) {
+  margin-right: 10px;
+}
+.footer__menu p:nth-child(2) {
+  margin-right: 40px;
+}
+.footer__menu p:nth-child(3) {
+  margin-right: 15px;
 }
 
 /*# sourceMappingURL=styles.css.map */
