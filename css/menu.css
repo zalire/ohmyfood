@@ -119,6 +119,8 @@ body {
 .menu__item .menu__item-check i {
   color: white;
   padding: 15px;
+  font-size: 23px;
+  font-weight: 900;
 }
 .menu__item .menu__item-price {
   display: flex;
