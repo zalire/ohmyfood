@@ -269,7 +269,7 @@ body {
 
   &__logo {
     font-family: "Shrikhand";
-    font-size: 18px;
+    font-size: 15px;
     margin-bottom: 20px;
   }
 
@@ -291,7 +291,7 @@ body {
 }
 
 @media screen and (min-width: 1024px) {
-  body {
+  .main {
     max-width: 1440px;
     margin: 0 auto;
   }
@@ -340,27 +340,28 @@ body {
   }
 
   .footer {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-start;
-    align-items: flex-end;
-    gap: 40px;
-    padding: 15px 20px 10px 20px;
-  
-    &__logo {
-      margin-bottom: 0;
-      font-size: 16px;
-      padding-left: 40px;
-    }
-  
-    &__menu {
-      display: flex;
-      flex-direction: row;
-      p:nth-child(1) { margin-right: 10px; }
-      p:nth-child(2) { margin-right: 40px; }
-      p:nth-child(3) { margin-right: 15px; }
-    }
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 40px;
+  padding: 15px 20px 10px 20px;
+
+  &__logo {
+    margin-bottom: 0;
+    font-size: 12px;
+    padding-left: 40px;
+    margin-top: 20px;
   }
+
+  &__menu {
+    display: flex;
+    flex-direction: row;
+    p:nth-child(1) { margin-right: 10px; }
+    p:nth-child(2) { margin-right: 40px; }
+    p:nth-child(3) { margin-right: 15px; }
+  }
+}
 }
 
 

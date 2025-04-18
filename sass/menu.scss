@@ -34,6 +34,43 @@ body {
   }
 }
 
+.menu__heart {
+  position: relative;
+  margin-right: 40px;
+  font-size: 24px;
+  cursor: pointer;
+
+  &::after {
+    content: '\f004';
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: $main-color;
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    transform: scale(0.1);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+
+  .fa-regular {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+
+  &:hover {
+    &::after {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    .fa-regular {
+      opacity: 0;
+      transform: scale(0.1);
+    }
+  }
+} 
+
 
 .menu__arrow {
   font-size: 22px;
@@ -70,15 +107,9 @@ body {
 .menu__name {
   font-family: "Shrikhand";
   font-weight: 400;
-  font-size: 28px;
+  font-size: 29px;
   line-height: 100%;
 }
-
-.menu__heart {
-  font-size: 24px;
-  cursor: pointer;
-}
-
 
 .menu__category {
   padding: 20px;
@@ -146,8 +177,6 @@ body {
     width: 65px;
   }
 
-
-
   &:nth-child(1) { animation-delay: 0.2s; }
   &:nth-child(2) { animation-delay: 0.4s; }
   &:nth-child(3) { animation-delay: 0.6s; }
@@ -212,7 +241,7 @@ body {
   
     &__logo {
       font-family: "Shrikhand", cursive;
-      font-size: 18px;
+      font-size: 15px;
       margin-bottom: 20px;
     }
   
@@ -233,39 +262,6 @@ body {
     }
   }
 
-  .menu__heart {
-    position: relative;
-  
-    &::after {
-      content: '\f004';
-      font-family: "Font Awesome 6 Free";
-      font-weight: 900;
-      color: $main-color;
-      position: absolute;
-      left: 0;
-      opacity: 0;
-      transform: scale(0.1);
-      transition: opacity 0.7s ease, transform 0.7s ease;
-    }
-  
-    .fa-regular {
-      opacity: 1;
-      transform: scale(1);
-      transition: opacity 0.7s ease, transform 0.7s ease;
-    }
-  
-    &:hover {
-      &::after {
-        opacity: 1;
-        transform: scale(1);
-      }
-  
-      .fa-regular {
-        opacity: 0;
-        transform: scale(0.1);
-      }
-    }
-  }  
 
   @media screen and (min-width: 1024px) {
 
@@ -284,6 +280,7 @@ body {
   
     .menu__heart {
       position: relative;
+      margin-right: 0;
   
       &::after {
         content: '\f004';
@@ -318,8 +315,9 @@ body {
   
       &__logo {
         margin-bottom: 0;
-        font-size: 16px;
+        font-size: 12px;
         padding-left: 40px;
+        margin-top: 20px;
       }
   
       &__menu {

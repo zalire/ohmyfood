@@ -27,6 +27,37 @@ body {
   max-width: 200px;
 }
 
+.menu__heart {
+  position: relative;
+  margin-right: 40px;
+  font-size: 24px;
+  cursor: pointer;
+}
+.menu__heart::after {
+  content: "\f004";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  color: #9356DC;
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  transform: scale(0.1);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.menu__heart .fa-regular {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.menu__heart:hover::after {
+  opacity: 1;
+  transform: scale(1);
+}
+.menu__heart:hover .fa-regular {
+  opacity: 0;
+  transform: scale(0.1);
+}
+
 .menu__arrow {
   font-size: 22px;
   color: black;
@@ -60,13 +91,8 @@ body {
 .menu__name {
   font-family: "Shrikhand";
   font-weight: 400;
-  font-size: 28px;
+  font-size: 29px;
   line-height: 100%;
-}
-
-.menu__heart {
-  font-size: 24px;
-  cursor: pointer;
 }
 
 .menu__category {
@@ -195,7 +221,7 @@ body {
 }
 .footer__logo {
   font-family: "Shrikhand", cursive;
-  font-size: 18px;
+  font-size: 15px;
   margin-bottom: 20px;
 }
 .footer__menu {
@@ -212,34 +238,6 @@ body {
   font-size: 14px;
 }
 
-.menu__heart {
-  position: relative;
-}
-.menu__heart::after {
-  content: "\f004";
-  font-family: "Font Awesome 6 Free";
-  font-weight: 900;
-  color: #9356DC;
-  position: absolute;
-  left: 0;
-  opacity: 0;
-  transform: scale(0.1);
-  transition: opacity 0.7s ease, transform 0.7s ease;
-}
-.menu__heart .fa-regular {
-  opacity: 1;
-  transform: scale(1);
-  transition: opacity 0.7s ease, transform 0.7s ease;
-}
-.menu__heart:hover::after {
-  opacity: 1;
-  transform: scale(1);
-}
-.menu__heart:hover .fa-regular {
-  opacity: 0;
-  transform: scale(0.1);
-}
-
 @media screen and (min-width: 1024px) {
   body {
     background-color: white;
@@ -253,6 +251,7 @@ body {
   }
   .menu__heart {
     position: relative;
+    margin-right: 0;
   }
   .menu__heart::after {
     content: "\f004";
@@ -283,8 +282,9 @@ body {
   }
   .footer__logo {
     margin-bottom: 0;
-    font-size: 16px;
+    font-size: 12px;
     padding-left: 40px;
+    margin-top: 20px;
   }
   .footer__menu {
     display: flex;
