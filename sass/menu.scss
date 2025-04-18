@@ -105,15 +105,48 @@ body {
 
 .menu__item {
   background: white;
-  padding: 18px;
   border-radius: 15px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: space-between;
-  align-items: center;
   opacity: 0;
   transform: translateY(20px);
   animation: fadeSlideIn 0.8s ease forwards;
+  box-sizing: border-box;
+  > div:first-child {
+    padding: 18px;
+  }
+
+  .menu__main {
+    flex: 1;
+  }
+
+  .menu__item-check {
+      background-color: rgba(153, 226, 208, 1);
+      border-radius: 0 12px 12px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 0px;
+      overflow: hidden;
+      transition: width 0.4s ease-in-out;
+      i {
+        color: white;
+        padding: 15px;
+      }    
+  }
+
+  .menu__item-price {
+    display: flex;
+    padding: 18px;
+    align-items: center;
+  }
+
+  &:hover .menu__item-check {
+    width: 60px;
+  }
+
+
 
   &:nth-child(1) { animation-delay: 0.2s; }
   &:nth-child(2) { animation-delay: 0.4s; }
@@ -200,12 +233,6 @@ body {
     }
   }
 
-  .menu__item-check i {
-    transform: translateX(20px);
-    opacity: 0;
-    transition: transform 0.4s ease, opacity 0.4s ease;
-  }
-
   .menu__heart {
     position: relative;
   
@@ -245,17 +272,6 @@ body {
     body {
       background-color: white;
     }
-  
-    .menu__item:hover .menu__item-check i {
-      transform: translateX(0);
-      opacity: 1;
-    }
-    
-    .menu__item:hover .menu__item-check i {
-      background-color: rgba(153, 226, 208, 1);
-      color: white;
-      padding: 15px;
-    }    
 
     .menu__img img {
       height: 500px;
