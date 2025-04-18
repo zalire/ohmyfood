@@ -338,27 +338,29 @@ body {
   .restaurant {
     width: calc(50% - 50px);
   }
-}
 
-.footer {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: flex-start;
-  align-items: flex-end;
-  gap: 40px;
-  padding: 15px 20px 10px 20px;
-
-  &__logo {
-    margin-bottom: 0;
-    font-size: 16px;
-    padding-left: 40px;
-  }
-
-  &__menu {
+  .footer {
     display: flex;
-    flex-direction: row;
-    p:nth-child(1) { margin-right: 10px; }
-    p:nth-child(2) { margin-right: 40px; }
-    p:nth-child(3) { margin-right: 15px; }
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 40px;
+    padding: 15px 20px 10px 20px;
+  
+    &__logo {
+      margin-bottom: 0;
+      font-size: 16px;
+      padding-left: 40px;
+    }
+  
+    &__menu {
+      display: flex;
+      flex-direction: row;
+      p:nth-child(1) { margin-right: 10px; }
+      p:nth-child(2) { margin-right: 40px; }
+      p:nth-child(3) { margin-right: 15px; }
+    }
   }
 }
+
+
