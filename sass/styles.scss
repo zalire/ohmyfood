@@ -10,6 +10,39 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.loader {
+  position: fixed;
+  inset: 0;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: hideLoader 0s forwards;
+  animation-delay: 2s;
+  z-index: 999;
+}
+
+.loader-circle {
+  width: 60px;
+  height: 60px;
+  border: 6px solid $main-color;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes hideLoader {
+  to {
+    display: none;
+  }
+}
+
 .header {
   display: flex;
   justify-content: center;
