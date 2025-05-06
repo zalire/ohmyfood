@@ -1,0 +1,2 @@
+Lien vers le dépôt GitHub : https://github.com/zalire/ohmyfood
+Lien vers la version en ligne du site : https://zalire.github.io/ohmyfood/
