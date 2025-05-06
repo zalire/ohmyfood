@@ -176,6 +176,11 @@ body {
   font-weight: bold;
   font-size: 16px;
   margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  width: 100%;
 }
 .menu__item-description {
   font-size: 14px;

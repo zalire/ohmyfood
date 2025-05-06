@@ -191,6 +191,11 @@ body {
     font-weight: bold;
     font-size: 16px;
     margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;      // assure un bloc plein largeur
+    width: 100%;         // pour que text-overflow sache où couper
   }
 
   &-description {
@@ -261,7 +266,6 @@ body {
       font-size: 14px;
     }
   }
-
 
   @media screen and (min-width: 1024px) {
 

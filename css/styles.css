@@ -290,15 +290,17 @@ body {
   }
   .fonctionnement {
     max-width: 1100px;
+    margin: 0 auto;
+    padding: 0;
   }
   .fonctionnement__title {
     padding-left: 0;
   }
   .fonctionnement__steps {
+    display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 35px;
-    max-width: 1100px;
     margin: 0 auto;
   }
   .step {
@@ -308,13 +310,21 @@ body {
   .step__number {
     left: 0;
   }
+  .restaurants {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0;
+  }
   .restaurants__cards {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 50px 100px;
+    margin: 0 auto;
   }
   .restaurant {
     width: calc(50% - 50px);
+    margin-bottom: 35px;
   }
   .footer {
     display: flex;
