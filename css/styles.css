@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
 }
@@ -352,6 +353,11 @@ body {
   }
   .footer__menu p:nth-child(3) {
     margin-right: 15px;
+  }
+  .restaurant > a {
+    display: block; /* pour que tout le bloc soit cliquable */
+    text-decoration: none; /* supprime le soulignement */
+    color: inherit; /* récupère la couleur parentale */
   }
 }
 

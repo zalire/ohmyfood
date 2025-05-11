@@ -2,12 +2,6 @@
   box-sizing: border-box;
 }
 
-.main {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 0 1.5rem;
-}
-
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -297,15 +291,18 @@ body {
   }
   .fonctionnement {
     max-width: 1100px;
+    margin: 0 auto;
+    padding: 0;
   }
   .fonctionnement__title {
     padding-left: 0;
   }
   .fonctionnement__steps {
+    display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 35px;
-    margin-right: 30px;
+    margin: 0 auto;
   }
   .step {
     flex: 1;
@@ -314,13 +311,21 @@ body {
   .step__number {
     left: 0;
   }
+  .restaurants {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0;
+  }
   .restaurants__cards {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 50px 100px;
+    margin: 0 auto;
   }
   .restaurant {
     width: calc(50% - 50px);
+    margin-bottom: 35px;
   }
   .footer {
     display: flex;
@@ -348,5 +353,8 @@ body {
   }
   .footer__menu p:nth-child(3) {
     margin-right: 15px;
+  }
+  .restaurant > a {
+    text-decoration: none;
   }
 }/*# sourceMappingURL=styles.css.map */

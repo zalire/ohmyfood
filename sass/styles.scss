@@ -406,6 +406,12 @@ body {
       p:nth-child(3) { margin-right: 15px; }
     }
   }
+
+  .restaurant {
+    > a {
+      text-decoration: none;
+    }
+  }
 }
 
 

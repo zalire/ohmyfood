@@ -16,7 +16,6 @@ body {
   position: relative;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
 }
-
 .header__logo {
   font-family: "Shrikhand";
   font-size: 22px;
@@ -24,7 +23,6 @@ body {
   display: flex;
   align-items: center;
 }
-
 .header__logo img {
   max-width: 200px;
 }
@@ -35,7 +33,6 @@ body {
   font-size: 24px;
   cursor: pointer;
 }
-
 .menu__heart::after {
   content: "\f004";
   font-family: "Font Awesome 6 Free";
@@ -47,18 +44,15 @@ body {
   transform: scale(0.1);
   transition: opacity 0.7s ease, transform 0.7s ease;
 }
-
 .menu__heart .fa-regular {
   opacity: 1;
   transform: scale(1);
   transition: opacity 0.7s ease, transform 0.7s ease;
 }
-
 .menu__heart:hover::after {
   opacity: 1;
   transform: scale(1);
 }
-
 .menu__heart:hover .fa-regular {
   opacity: 0;
   transform: scale(0.1);
@@ -76,12 +70,11 @@ body {
   overflow: hidden;
   background-color: white;
 }
-
 .menu__img img {
   width: 100%;
   height: 250px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   display: block;
 }
 
@@ -135,16 +128,13 @@ body {
   animation: fadeSlideIn 0.8s ease forwards;
   box-sizing: border-box;
 }
-
 .menu__item > div:first-child {
   padding: 18px;
 }
-
 .menu__item .menu__main {
   flex: 1 1 0;
   min-width: 0;
 }
-
 .menu__item-name {
   font-weight: bold;
   font-size: 16px;
@@ -154,7 +144,6 @@ body {
   text-overflow: ellipsis;
   display: block;
 }
-
 .menu__item .menu__item-check {
   background-color: rgb(153, 226, 208);
   border-radius: 0 12px 12px 0;
@@ -165,52 +154,42 @@ body {
   overflow: hidden;
   transition: width 0.4s ease-in-out;
 }
-
 .menu__item .menu__item-check i {
   color: white;
   padding: 15px;
   font-size: 23px;
   font-weight: 900;
 }
-
 .menu__item .menu__item-price {
   display: flex;
   padding: 18px;
   align-items: center;
 }
-
 .menu__item:hover .menu__item-check {
   width: 65px;
 }
-
 .menu__item:nth-child(1) {
   animation-delay: 0.2s;
 }
-
 .menu__item:nth-child(2) {
   animation-delay: 0.4s;
 }
-
 .menu__item:nth-child(3) {
   animation-delay: 0.6s;
 }
-
 .menu__item:nth-child(4) {
   animation-delay: 0.8s;
 }
-
 .menu__item-text {
   display: flex;
   flex-direction: column;
 }
-
 .menu__item-description {
   font-size: 14px;
   color: gray;
   margin: 0;
   margin-top: 4px;
 }
-
 .menu__item-price {
   font-weight: bold;
   font-size: 16px;
@@ -237,7 +216,6 @@ body {
   border: none;
   transition: filter 0.3s ease, box-shadow 0.3s ease;
 }
-
 .button__intro:hover {
   filter: brightness(1.1);
   box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.2);
@@ -248,25 +226,21 @@ body {
   color: white;
   padding: 30px 20px;
 }
-
 .footer__logo {
   font-family: "Shrikhand", cursive;
   font-size: 15px;
   margin-bottom: 20px;
 }
-
 .footer__menu {
   display: flex;
   flex-direction: column;
 }
-
 .footer__item {
   font-size: 16px;
   display: flex;
   align-items: center;
   gap: 10px;
 }
-
 .footer i {
   font-size: 14px;
 }
@@ -332,6 +306,4 @@ body {
   .footer__menu p:nth-child(3) {
     margin-right: 15px;
   }
-} 
-
-/*# sourceMappingURL=menu.css.map */
+}/*# sourceMappingURL=menu.css.map */
